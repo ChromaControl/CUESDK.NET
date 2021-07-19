@@ -290,7 +290,8 @@ namespace CUESDK
         /// Unregisters callback previously registered by SubscribeForEvents call.
         /// </summary>
         /// <returns>Boolean value. True if successful. Use GetLastError() to check the reason of failure.</returns>
-        [DllImport("CUESDK.dll", EntryPoint = "CorsairUnsubscribeFromEvents", CallingConvention = CallingConvention.Cdecl)]
+        [SuppressUnmanagedCodeSecurity]
+        [DllImport("CUESDK.dll", EntryPoint = "CorsairUnsubscribeFromEvents", CallingConvention = CallingConvention.Cdecl, SetLastError = false)]
         [return: MarshalAs(UnmanagedType.I1)]
         private static extern bool UnsubscribeFromEventsNative();
 
