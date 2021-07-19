@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net45</TargetFrameworks>
+    <RootNamespace>CUESDK</RootNamespace>
+    <PackageId>CUESDK.NET</PackageId>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+    <OutputType>Library</OutputType>
+    <Authors>Chroma Control Contributors</Authors>
+    <Company>Chroma Control Contributors</Company>
+    <Product>Chroma Control</Product>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/ChromaControl/CUESDK.NET</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/ChromaControl/CUESDK.NET/releases</PackageReleaseNotes>
+    <Description>A .NET wrapper for the Corsair CUE SDK</Description>
+    <Copyright>© Chroma Control Contibutors. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/ChromaControl</PackageProjectUrl>
+    <PackageTags>Corsair;CUE;iCUE;SDK;CUESDK;CUESDK.NET</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>nuget.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>3.0.378.0</AssemblyVersion>
+    <FileVersion>3.0.378.0</FileVersion>
+    <Version>3.0.378</Version>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\nuget.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CUESDK.NET.Native" Version="3.0.378" />
+  </ItemGroup>
+
+</Project>

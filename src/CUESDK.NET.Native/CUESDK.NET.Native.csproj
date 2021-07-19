@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.0.4">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net45</TargetFrameworks>
+    <PackageId>CUESDK.NET.Native</PackageId>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+    <Authors>Chroma Control Contributors</Authors>
+    <Company>Chroma Control Contributors</Company>
+    <Product>Chroma Control</Product>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/ChromaControl/CUESDK.NET</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/ChromaControl/CUESDK.NET/releases</PackageReleaseNotes>
+    <Description>Internal implementation package not meant for direct consumption. Please do not reference directly.</Description>
+    <Copyright>© Chroma Control Contibutors. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/ChromaControl</PackageProjectUrl>
+    <PackageTags>Corsair;CUE;iCUE;SDK;CUESDK;CUESDK.NET</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>nuget.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <Version>3.0.378</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\nuget.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="runtimes\**" PackagePath="runtimes" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>NU5128</NoWarn>
+  </PropertyGroup>
+
+</Project>
